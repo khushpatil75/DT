@@ -446,3 +446,13 @@ function closeSuccessPopup() {
     document.getElementById("cartTotal").innerText = "₹0";
     document.getElementById("cartCount").innerText = "0";
 }
+document.getElementById("checkoutBtn").addEventListener("click", function () {
+    const tableNumber = document.getElementById("tableNumber").value.trim();
+
+    if (tableNumber === "" || isNaN(tableNumber) || Number(tableNumber) < 1) {
+        alert("Please enter a valid table number before proceeding.");
+        return;
+    }
+
+    showSuccessPopup();
+});
