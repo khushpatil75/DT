@@ -110,7 +110,7 @@ const menuItems = [
         description: "Hot filter coffee",
         price: 20,
         category: "beverages",
-        image: "-cofee.jpeg"
+        image: "cofee.jpeg"
     },
     {
         id: 15,
